@@ -1,0 +1,71 @@
+    /* body {
+    background-image: url(calcbackgrd.jpg); */
+    
+    table {
+        width: 310px;
+        margin: 50px auto;
+        background: #058a8f;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px 20px 20px
+    }
+    
+    .heading {
+        color: white;
+        font-weight: bolder;
+        font-size: 130%;
+        text-align: center;
+        font-family: Cambria, sans-serif;
+        text-shadow: 2px 2px 2px black;
+        sha
+    }
+    
+    #input,
+    #answer {
+        height: 50px;
+        width: 260px;
+        border: none;
+        text-align: right;
+        font-weight: bold;
+    }
+    
+    #input {
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 2px 2px black;
+        color: #1e1e1e;
+        font-size: 210%;
+    }
+    
+    #answer {
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 2px black;
+        color: #1e1e1e;
+        font-size: 250%;
+    }
+    
+    input[type=button] {
+        height: 60px;
+        width: 60px;
+        color: blue;
+        font-size: 130%;
+        background: white;
+        margin: 1px;
+        border-radius: 8px;
+        border: none;
+        font-weight: bold;
+    }
+    
+    input[type=button]:hover {
+        background: #ccbbcc;
+        cursor: pointer;
+    }
+    
+    #extra {
+        background-color: darkturquoise;
+        color: white;
+    }
+    
+    #operato {
+        background-color: aqua;
+        color: black;
+    }
