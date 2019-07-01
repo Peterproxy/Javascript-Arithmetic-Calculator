@@ -1,67 +1,81 @@
-//document.addEventListener('DOMContentLoaded', function() {
+//VARIABLE DECLARATIONS
+const inputDisplay = document.getElementById('calc-input');
+const outputDisplay = document.getElementById('calc-output');
+const operators = document.getElementById('division');
 
+//NUMBER KEYS
+const numKeys = document.getElementsByClassName('keys');
+Array.from(numKeys).forEach(function(btn) {
+    btn.addEventListener('click', getNumber);
+})
 
-
-
-
-//INPUT FUNCTION
-function getNumber(a) {
-    myform.input.value += a;
+function getNumber() {
+    inputDisplay.value += this.value;
 }
 
+//OR Number Buttons
+/* for (var i = 0; i < numKeys.length; i++) {
+    numKeys[i].addEventListener('click', function() {
+        inputDisplay.value += this.value;
+    });
+} */
+
 //Equal sign function:
-function compute() {
-    //myform.answer.value = (eval(myform.input.value)).toFixed(6); } 
-    myform.answer.value = (eval(myform.input.value))
+const compute = document.getElementById('equal');
+compute.addEventListener('click', equals)
+
+function equals() {
+    outputDisplay.value = (eval(inputDisplay.value))
+}
+
+// Clear Screen (CE)
+document.getElementById('clearScreen').addEventListener('click', clear)
+
+function clear() {
+    inputDisplay.value = '';
+    outputDisplay.value = '';
 }
 
 //Backspace Function:
-function backSpace() {
-    let inputDisplay = myform.input.value;
-    myform.input.value = inputDisplay.substr(0, inputDisplay.length - 1);
-}
+document.getElementById('backSpc').addEventListener('click', backSpace);
 
-//clear screen functions:
-function clearScreen() {
-    document.getElementById('input').value = "";
-    document.getElementById('answer').value = "";
+function backSpace() {
+    let inputText = inputDisplay.value;
+    inputDisplay.value = inputText.substr(0, inputText.length - 1);
 }
 
 //Square function:
+document.getElementById('square').addEventListener('click', squaX);
+
 function squaX() {
-    myform.answer.value = Math.pow(myform.input.value, 2);
+    outputDisplay.value = Math.pow(inputDisplay.value, 2);
 }
 
 //Square- root function:
+document.getElementById('squareRt').addEventListener('click', squRoot);
+
 function squRoot() {
-    // myform.input.value = Math.SQRT1_2(myform.input.value);
-    myform.answer.value = Math.pow(myform.input.value, 1 / 2);
+    outputDisplay.value = Math.pow(inputDisplay.value, 1 / 2);
 }
-
-
-//OPERATORS FUNCTION
-function getOperand(a) {
-    myform.input.value += a;
-}
-
 
 //BRACKETS FUNCTION
+document.getElementById('bracket').addEventListener('click', brackets)
 let i = "0";
 
 function brackets() {
     if (i == '0') {
-        myform.input.value += '(';
+        inputDisplay.value += '(';
         i = 1;
     } else if (i == 1) {
-        myform.input.value += ')';
+        inputDisplay.value += ')';
         i = 0;
     }
 }
 
 
 //PERCENTAGE FUNCTION
-function getPerc() {
-    myform.answer.value = (myform.input.value) / 100
-}
+document.getElementById('perc').addEventListener('click', getPerc)
 
-//})
+function getPerc() {
+    outputDisplay.value = (inputDisplay.value) / 100
+}
