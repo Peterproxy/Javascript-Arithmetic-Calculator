@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>WEEK 4: ASSIGNMENT</title>
-    <h1>WEEK 4 ASSIGNMENT: <br></h1>
+    <title>ARITHMETIC CALCULATOR</title>
+    <h1>1ST PROJECT WEB APP: <br></h1>
     <h2>ARITHMETIC CALCULATOR</h2>
 </head>
 
@@ -24,46 +24,46 @@
                     </td>
                 </tr>
                 <td>
-                    <input type="text" id="input" placeholder="0" readonly>
-                    <input type="text" id="answer" readonly style="color: green" maxlength="10">
+                    <input type="text" id="calc-input" placeholder="0" readonly>
+                    <input type="text" id="calc-output" readonly style="color: green" maxlength="10">
                 </td>
             </tr>
 
             <tr>
                 <!-- BUTTONS SECTION -->
                 <td>
-                    <input type="button" value="CE" onclick="clearScreen()" style="color: white; background:red">
-                    <input id="extra" type="button" value="()" onclick="brackets()">
-                    <input id="extra" type="button" value="%" onclick="getPerc('%')">
-                    <input type="button" value="&#8656;" onclick="backSpace()" style="color: red; background:rgb(240, 205, 205)">
+                    <input type="button" value="CE" id="clearScreen" style="color: white; background:red">
+                    <input id="bracket" type="button" value="()" class="extra">
+                    <input id="perc" type="button" value="%" class="extra">
+                    <input id="backSpc" type="button" value="&#8656;" style="color: red; background:rgb(240, 205, 205)" class="extra">
                     <br>
 
-                    <input type="button" value="7" onclick="getNumber(7)">
-                    <input type="button" value="8" onclick="getNumber(8)">
-                    <input type="button" value="9" onclick="getNumber(9)">
-                    <input id="operato" type="button" value="&#247;" onclick="getOperand('/')">
+                    <input class="keys" type="button" value="7">
+                    <input class="keys" type="button" value="8">
+                    <input class="keys" type="button" value="9">
+                    <input id="operato" type="button" value="&#247;" class="keys">
                     <br>
 
-                    <input type="button" value="4" onclick="getNumber(4)">
-                    <input type="button" value="5" onclick="getNumber(5)">
-                    <input type="button" value="6" onclick="getNumber(6)">
-                    <input id="operato" type="button" value="*" onclick="getOperand('*')">
+                    <input type="button" value="4" class="keys">
+                    <input type="button" value="5" class="keys">
+                    <input type="button" value="6" class="keys">
+                    <input id="operato" type="button" value="*" class="keys">
                     <br>
 
-                    <input type="button" value="1" onclick="getNumber(1)">
-                    <input type="button" value="2" onclick="getNumber(2)">
-                    <input type="button" value="3" onclick="getNumber(3)">
-                    <input id="operato" type="button" value="-" onclick="getOperand('-')">
+                    <input type="button" value="1" class="keys">
+                    <input type="button" value="2" class="keys">
+                    <input type="button" value="3" class="keys">
+                    <input id="operato" type="button" value="-" class="keys">
                     <br>
 
-                    <input type="button" value="0" onclick="getNumber(0)">
-                    <input type="button" value="." onclick="getNumber('.')">
-                    <input class="operator" type="button" value="±" onclick="getOperand('-')">
-                    <input id="operato" type="button" value="+" onclick="getOperand('+')">
+                    <input type="button" value="0" class="keys">
+                    <input type="button" value="." class="keys">
+                    <input class="operator" type="button" value="±" class="keys">
+                    <input id="operato" type="button" value="+" class="keys">
                     <br>
-                    <input id="extra" type="button" value="x&#178" onclick="squaX()">
-                    <input id="extra" type="button" value="&#8730x" onclick="squRoot()">
-                    <input type="button" value="=" onclick="compute()" style=" color:white; background:green; width: 125px;">
+                    <input id="square" type="button" value="x&#178">
+                    <input id="squareRt" type="button" value="&#8730x">
+                    <input type="button" value="=" id="equal" style=" color:white; background:green; width: 125px;">
                     <br>
                 </td>
             </tr>
