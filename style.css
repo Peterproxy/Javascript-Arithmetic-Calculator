@@ -20,8 +20,8 @@
         sha
     }
     
-    #input,
-    #answer {
+    #calc-input,
+    #calc-output {
         height: 50px;
         width: 260px;
         border: none;
@@ -29,14 +29,14 @@
         font-weight: bold;
     }
     
-    #input {
+    #calc-input {
         border-radius: 10px 10px 0px 0px;
         box-shadow: 2px 2px 2px black;
         color: #1e1e1e;
         font-size: 210%;
     }
     
-    #answer {
+    #calc-output {
         border-radius: 0px 0px 10px 10px;
         box-shadow: 2px 2px 2px black;
         color: #1e1e1e;
@@ -60,11 +60,15 @@
         cursor: pointer;
     }
     
-    #extra {
+    #bracket,
+    #perc,
+    #backSpc,
+    #square,
+    #squareRt {
         background-color: darkturquoise;
         color: white;
     }
-    
+        
     #operato {
         background-color: aqua;
         color: black;
