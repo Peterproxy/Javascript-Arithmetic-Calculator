@@ -73,6 +73,11 @@ function brackets() {
 }
 
 
+//PLUS & MINUS FUNCTION
+function negative(a) {
+    inputDisplay.value += a;
+}
+
 //PERCENTAGE FUNCTION
 document.getElementById('perc').addEventListener('click', getPerc)
 
