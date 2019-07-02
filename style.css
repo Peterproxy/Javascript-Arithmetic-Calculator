@@ -59,14 +59,12 @@
         background: #ccbbcc;
         cursor: pointer;
     }
-    
-    #bracket,
-    #perc,
-    #backSpc,
-    #square,
-    #squareRt {
+ 
+input[class=extra] {
         background-color: darkturquoise;
         color: white;
+    }
+ 
     }
         
     #operato {
